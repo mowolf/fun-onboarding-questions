@@ -3,7 +3,7 @@
     <div class="question">
       <p>{{ selectedQuestion }}</p>
     </div>
-    <div class="button-container" @click="getRandomQuestion">
+    <div class="button-container" @click="getRandomQuestion()">
       <button>
         Get new question!
       </button>
@@ -27,6 +27,7 @@ export default {
   },
   methods: {
     getRandomQuestion () {
+      console.log('as')
       this.selectedQuestion = this.questions[
         Math.floor(Math.random() * this.questions.length)
       ]
