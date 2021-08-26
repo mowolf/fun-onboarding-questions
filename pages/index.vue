@@ -9,7 +9,7 @@
       </button>
     </div>
     <a href="https://github.com/mowolf/fun-onboarding-questions" class="github-icon" >
-      <img src="/github.svg" alt="Github Icon" height="30" width="30">
+      <img src="~/assets/img/github.svg" alt="Github Icon" height="30" width="30">
     </a>
   </div>
 </template>
@@ -75,6 +75,7 @@ button:hover {
 
 button:active {
   filter: drop-shadow(0 0 2px #7272726b);
+  color: black;
   transform: translate(2px, 2px);
   background: linear-gradient(270deg, #ff0000, #00ff91, #ffd900, #ff0000);
   background-size: 400% 400%;
