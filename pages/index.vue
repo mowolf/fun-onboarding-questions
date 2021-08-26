@@ -8,7 +8,7 @@
         Get new question!
       </button>
     </div>
-    <a href="https://github.com/mowolf/fun-onboarding-questions" class="github-icon" >
+    <a href="https://github.com/mowolf/fun-onboarding-questions" class="github-icon">
       <img src="~/assets/img/github.svg" alt="Github Icon" height="30" width="30">
     </a>
   </div>
@@ -27,7 +27,6 @@ export default {
   },
   methods: {
     getRandomQuestion () {
-      alert('l')
       this.selectedQuestion = this.questions[
         Math.floor(Math.random() * this.questions.length)
       ]
