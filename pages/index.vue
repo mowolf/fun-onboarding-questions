@@ -185,13 +185,12 @@ export default {
   margin-left: 10%;
   margin-right: 10%;
   font-weight: 700;
-  background: linear-gradient(45deg, tomato, gold);
-  background-clip: text;
-  -webkit-box-decoration-break: clone;
+  text-shadow: 0px 0px transparent;
+  background: -webkit-linear-gradient(45deg, tomato, gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0px 0px transparent;
-  color: transparent;
+  -webkit-box-decoration-break: clone;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
 }
 
 .button-container {
@@ -221,16 +220,13 @@ button {
 }
 
 button:hover .button-content {
-  -webkit-animation: AnimationName 3s ease infinite;
-  -moz-animation: AnimationName 3s ease infinite;
-  -o-animation: AnimationName 3s ease infinite;
-  animation: AnimationName 3s ease infinite;
-  background: linear-gradient(270deg, #ff0000, #00ff91, #ffd900, #ff0000);
-  background-size: 400% 400%;
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  -o-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+  background: linear-gradient(45deg, #ff0000, #ffd900, #2bff00);
+  background-size: 800% 800%;
   box-shadow: 0 0 8px #ff0000;
-
-  /* background-clip: text;
-  color: transparent; */
 }
 
 button:hover {
