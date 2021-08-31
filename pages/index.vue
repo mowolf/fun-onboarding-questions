@@ -5,7 +5,9 @@
     </div>
     <div class="button-container" @click="getRandomQuestion()">
       <button>
-        Get new question!
+        <div class="button-content">
+          ⁉️
+        </div>
       </button>
     </div>
     <a
@@ -179,42 +181,66 @@ export default {
 .question {
   margin-top: 40vh;
   transform: translateY(-50%);
-  font-size: 4em;
+  font-size: 4.5vw;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-weight: 700;
+  background: linear-gradient(45deg, tomato, gold);
+  background-clip: text;
+  -webkit-box-decoration-break: clone;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px transparent;
+  color: transparent;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 button {
+  border: none;
+  transition: 0.2s;
   cursor: pointer;
   font-weight: bold;
   background: none;
-  border: none;
-  border-radius: 50px;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  box-shadow: 1px 1px 5px black;
+  padding: 10px;
 }
 
-button:hover {
-  background: linear-gradient(270deg, #ff0000, #00ff91, #ffd900, #ff0000);
-  background-size: 400% 400%;
+.button-content {
+  box-shadow: 0 0 8px rgb(52, 52, 52);
+  border-radius: 50px;
+  padding: 15px 32px;
+}
+
+button:hover .button-content {
   -webkit-animation: AnimationName 3s ease infinite;
   -moz-animation: AnimationName 3s ease infinite;
   -o-animation: AnimationName 3s ease infinite;
   animation: AnimationName 3s ease infinite;
+  background: linear-gradient(270deg, #ff0000, #00ff91, #ffd900, #ff0000);
+  background-size: 400% 400%;
+  box-shadow: 0 0 8px #ff0000;
+
+  /* background-clip: text;
+  color: transparent; */
+}
+
+button:hover {
+  transform: scale(1.1, 1.1);
 }
 
 button:active {
   filter: drop-shadow(0 0 2px #7272726b);
   color: black;
   transform: translate(2px, 2px);
-  background: linear-gradient(270deg, #ff0000, #00ff91, #ffd900, #ff0000);
-  background-size: 400% 400%;
-  -webkit-animation: AnimationName 3s ease infinite;
-  -moz-animation: AnimationName 3s ease infinite;
-  -o-animation: AnimationName 3s ease infinite;
-  animation: AnimationName 3s ease infinite;
 }
 
 .container {
@@ -225,6 +251,7 @@ button:active {
   right: 0;
   position: absolute;
   text-align: center;
+  overflow: hidden;
 }
 
 .animated-gradient {
@@ -279,5 +306,13 @@ button:active {
   100% {
     background-position: 43% 0%;
   }
+}
+
+img {
+  transition: 0.5s;
+}
+img:hover {
+  filter: drop-shadow(2px 2px 10px white);
+  transform: translate(-2px, -2px);
 }
 </style>
