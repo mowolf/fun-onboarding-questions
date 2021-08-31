@@ -8,40 +8,52 @@
         Get new question!
       </button>
     </div>
-    <a href="https://github.com/mowolf/fun-onboarding-questions" class="github-icon">
-      <img src="~/assets/img/github.svg" alt="Github Icon" height="30" width="30">
+    <a
+      href="https://github.com/mowolf/fun-onboarding-questions"
+      class="github-icon"
+    >
+      <img
+        src="~/assets/img/github.svg"
+        alt="Github Icon"
+        height="30"
+        width="30"
+      />
     </a>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       selectedQuestion: undefined,
-      questions: ['What did you learn in the last week?', 'What was the worst food you ever had?']
-    }
+      questions: [
+        "What did you learn in the last week?",
+        "What was the worst food you ever had?",
+        "Whats the best item you bougth in the last year/month?",
+        "Whats your dream assignement/job?"
+      ]
+    };
   },
-  created () {
-    this.getRandomQuestion()
+  created() {
+    this.getRandomQuestion();
   },
   methods: {
-    getRandomQuestion () {
-      console.log('as')
+    getRandomQuestion() {
       this.selectedQuestion = this.questions[
         Math.floor(Math.random() * this.questions.length)
-      ]
+      ];
     }
   }
-}
+};
 </script>
 
 <style scoped>
 .github-icon {
- position: absolute;
- top: 0;
- right: 0;
- padding: 10px
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
 }
 
 .question {
@@ -86,7 +98,7 @@ button:active {
 }
 
 .container {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   top: 0;
   bottom: 0;
   left: 0;
@@ -105,24 +117,47 @@ button:active {
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:43% 0%}
-    50%{background-position:58% 100%}
-    100%{background-position:43% 0%}
+  0% {
+    background-position: 43% 0%;
+  }
+  50% {
+    background-position: 58% 100%;
+  }
+  100% {
+    background-position: 43% 0%;
+  }
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:43% 0%}
-    50%{background-position:58% 100%}
-    100%{background-position:43% 0%}
+  0% {
+    background-position: 43% 0%;
+  }
+  50% {
+    background-position: 58% 100%;
+  }
+  100% {
+    background-position: 43% 0%;
+  }
 }
 @-o-keyframes AnimationName {
-    0%{background-position:43% 0%}
-    50%{background-position:58% 100%}
-    100%{background-position:43% 0%}
+  0% {
+    background-position: 43% 0%;
+  }
+  50% {
+    background-position: 58% 100%;
+  }
+  100% {
+    background-position: 43% 0%;
+  }
 }
 @keyframes AnimationName {
-    0%{background-position:43% 0%}
-    50%{background-position:58% 100%}
-    100%{background-position:43% 0%}
+  0% {
+    background-position: 43% 0%;
+  }
+  50% {
+    background-position: 58% 100%;
+  }
+  100% {
+    background-position: 43% 0%;
+  }
 }
-
 </style>
