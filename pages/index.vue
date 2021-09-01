@@ -185,11 +185,11 @@ export default {
   margin-left: 10%;
   margin-right: 10%;
   font-weight: 700;
-  text-shadow: 0px 0px transparent;
+  /* text-shadow: 0px 0px transparent;
   background: -webkit-linear-gradient(45deg, tomato, gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; */
 }
 
 .button-container {
