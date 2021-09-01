@@ -181,7 +181,7 @@ export default {
 .question {
   margin-top: 40vh;
   transform: translateY(-50%);
-  font-size: 4.5vw;
+  font-size: max(4.5vw, 4.5vh);
   margin-left: 10%;
   margin-right: 10%;
   font-weight: 700;
@@ -190,7 +190,6 @@ export default {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
 }
 
 .button-container {
@@ -226,7 +225,6 @@ button:hover .button-content {
   animation: AnimationName 6s ease infinite;
   background: linear-gradient(45deg, #ff0000, #ffd900, #2bff00);
   background-size: 800% 800%;
-  box-shadow: 0 0 8px #ff0000;
 }
 
 button:hover {
