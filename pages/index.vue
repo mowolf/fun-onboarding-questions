@@ -153,7 +153,23 @@ export default {
         "Who’s someone you’ve been thinking about often recently? Why?",
         "What’s an interesting thing you recently googled?",
         "If you knew you could not fail, what is the one thing you’d like to accomplish?",
-        "If the whole world were listening, what would you say?"
+        "If the whole world were listening, what would you say?",
+        "If you could be an other colleague for one day, who would you be?",
+        "What's the first thing you would buy if you suddenly became a billionaire?",
+        "What's a hobby project you would like to do at some point?",
+        "What is your proudest accomplishment?",
+        "What is your proudest accomplishment?",
+        "What is a superpower you desire? The catch is that the next person in the question chain has to decide the catch to your superpower!",
+        "What's the most interesting thing you can see out of your office or kitchen window?",
+        "Where do you see yourself in 10 years?",
+        "What is your favorite family holiday tradition?",
+        "Is there anything you wished would come back into fashion?  ",
+        "If you had a warning label, what would yours say?",
+        "What's the most daring thing you've ever done?",
+        "What was the last book you read?",
+        "What's the most unusual thing you've ever eaten?",
+        "Do you collect anything?",
+        "What is your favorite thing about your career?"
       ]
     };
   },
